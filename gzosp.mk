@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017 Ground Zero Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,8 +17,8 @@
 
 $(call inherit-product, device/xiaomi/tissot/full_tissot.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some GZOSP stuff.
+$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
 
 # A/B updater
 AB_OTA_UPDATER := true
@@ -52,7 +53,7 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     libgptutils \
     libz
 
-PRODUCT_NAME := lineage_tissot
+PRODUCT_NAME := gzosp_tissot
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
