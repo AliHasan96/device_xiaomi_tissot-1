@@ -1,1 +1,2 @@
 type goodixfingerprintd_service, service_manager_type;
+type pocket_service, system_server_service, service_manager_type;
